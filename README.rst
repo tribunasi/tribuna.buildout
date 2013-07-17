@@ -28,3 +28,7 @@ Configuration
 
 ...
 
+Testing
+=======
+
+All tests are included in tribuna.policy. To run them, just run bin/test
