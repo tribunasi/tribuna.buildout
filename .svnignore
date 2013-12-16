@@ -19,3 +19,4 @@ fabfile.py
 Paste*
 src
 local
+*.egg-info
