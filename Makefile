@@ -7,7 +7,7 @@ options =
 
 all: tests
 
-docs: docs/html/index.html src/tribuna.content/docs/html/index.html src/tribuna.annotator/docs/html/index.html src/tribuna.policy/docs/html/index.html
+docs: docs/html/index.html src/tribuna.content/docs/html/index.html src/tribuna.annotator/docs/html/index.html src/tribuna.policy/docs/html/index.html src/tribuna.diazotheme/docs/html/index.html
 
 docs/html/index.html: docs/*.rst bin/sphinx-build
 	bin/sphinx-build docs docs/html
@@ -26,6 +26,11 @@ src/tribuna.annotator/docs/html/index.html: src/tribuna.annotator/docs/*.rst bin
 
 src/tribuna.policy/docs/html/index.html: src/tribuna.policy/docs/*.rst bin/sphinx-build src/tribuna.policy/*.rst
 	bin/sphinx-build src/tribuna.policy/docs src/tribuna.policy/docs/html
+	@touch $@
+	@echo "Documentation was generated at '$@'."
+
+src/tribuna.diazotheme/docs/html/index.html: src/tribuna.diazotheme/docs/*.rst bin/sphinx-build src/tribuna.diazotheme/*.rst
+	bin/sphinx-build src/tribuna.diazotheme/docs src/tribuna.diazotheme/docs/html
 	@touch $@
 	@echo "Documentation was generated at '$@'."
 

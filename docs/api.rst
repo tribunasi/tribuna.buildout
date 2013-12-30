@@ -21,3 +21,11 @@ API for tribuna.policy
 `Link to the documentation <../../src/tribuna.policy/docs/html/api.html>`_.
 
 .. include:: ../src/tribuna.policy/docs/api.rst
+
+==========================
+API for tribuna.diazotheme
+==========================
+
+`Link to the documentation <../../src/tribuna.diazotheme/docs/html/api.html>`_.
+
+.. include:: ../src/tribuna.diazotheme/docs/api.rst
