@@ -9,7 +9,10 @@ all: docs tests
 
 docs: docs/html/index.html
 
-docs/html/index.html: docs/*.rst bin/sphinx-build
+docs/html/index.html: docs/*.rst bin/sphinx-build src/tribuna.content/docs/*.rst src/tribuna.annotator/docs/*.rst src/tribuna.policy/docs/*.rst
+	bin/sphinx-build src/tribuna.content/docs src/tribuna.content/docs/html
+	bin/sphinx-build src/tribuna.annotator/docs src/tribuna.annotator/docs/html
+	bin/sphinx-build src/tribuna.policy/docs src/tribuna.policy/docs/html
 	bin/sphinx-build docs docs/html
 	@touch $@
 	@echo "Documentation was generated at '$@'."
@@ -30,8 +33,8 @@ $(python):
 
 tests: .installed.cfg
 	@bin/test
-	@bin/flake8 setup.py
-	@bin/flake8 src/tribuna/buildout
+	# @bin/flake8 setup.py
+	# @bin/flake8 src/tribuna/buildout
 	@for pt in `find src/tribuna.* -name "*.pt"` ; do bin/zptlint $$pt; done
 	@for xml in `find src/tribuna.* -name "*.xml"` ; do bin/zptlint $$xml; done
 	@for zcml in `find src/tribuna.* -name "*.zcml"` ; do bin/zptlint $$zcml; done
