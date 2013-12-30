@@ -1,28 +1,23 @@
-===
-API
-===
+=======================
+API for tribuna.content
+=======================
 
+`Link to the documentation <../../src/tribuna.content/docs/html/api.html>`_.
 
-Miscellaneous
-=============
+.. include:: ../src/tribuna.content/docs/api.rst
 
-.. automodule:: tribuna.buildout
-    :members:
+=========================
+API for tribuna.annotator
+=========================
 
-----
+`Link to the documentation <../../src/tribuna.annotator/docs/html/api.html>`_.
 
-.. automodule:: tribuna.buildout.interfaces
-    :members:
+.. include:: ../src/tribuna.annotator/docs/api.rst
 
+======================
+API for tribuna.policy
+======================
 
-Tests
-=====
+`Link to the documentation <../../src/tribuna.policy/docs/html/api.html>`_.
 
-.. automodule:: tribuna.buildout.testing
-    :members:
-
-----
-
-.. automodule:: tribuna.buildout.tests.test_setup
-    :members:
-
+.. include:: ../src/tribuna.policy/docs/api.rst

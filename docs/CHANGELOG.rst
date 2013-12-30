@@ -1,10 +1,7 @@
 Changelog
 =========
 
-
-0.1 (unreleased)
-----------------
-
-- Initial release.
-  [YOUR NAME HERE]
-
+.. include:: ../src/tribuna.policy/docs/CHANGELOG.rst
+.. include:: ../src/tribuna.content/docs/CHANGELOG.rst
+.. include:: ../src/tribuna.diazotheme/CHANGELOG.rst
+.. include:: ../src/tribuna.annotator/docs/CHANGELOG.rst

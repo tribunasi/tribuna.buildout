@@ -8,7 +8,6 @@ Developer documentation
     :maxdepth: 2
 
     api.rst
-    glossary.rst
 
 
 .. include:: CHANGELOG.rst
