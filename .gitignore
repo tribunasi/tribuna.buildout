@@ -1,0 +1,10 @@
+.*
+bin/*
+src/*
+var/*
+parts/*
+develop-eggs/*
+include/*
+lib/*
+local/*
+local/
