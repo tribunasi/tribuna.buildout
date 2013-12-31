@@ -4,8 +4,8 @@ Changelog
 tribuna.buildout
 ----------------
 
-0.2 (development)
-^^^^^^^^^^^^^^^^^
+0.2 (in development)
+^^^^^^^^^^^^^^^^^^^^
 
 0.1
 ^^^
