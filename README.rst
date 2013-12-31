@@ -27,3 +27,8 @@ Translations
 To extract translations, move to ``src/tribuna.content/tribuna/content/`` and
 run the ``manage_translations.sh`` command that is inside the folder
 (``./manage_translations.sh``).
+
+Requirements
+============
+
+Plone requirements: http://developer.plone.org/getstarted/requirements.html
