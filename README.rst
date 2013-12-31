@@ -32,3 +32,9 @@ Requirements
 ============
 
 Plone requirements: http://developer.plone.org/getstarted/requirements.html
+
+Contributing
+============
+
+If you want to contribute to any of the repositories, please fork it and then
+submit a pull request
