@@ -41,7 +41,7 @@ bin/sphinx-build: .installed.cfg
 	bin/buildout $(options)
 
 bin/buildout: $(python) buildout.cfg bootstrap.py
-	$(python) bootstrap.py -d
+	$(python) bootstrap.py -v 1.7.1
 	@touch $@
 
 $(python):
@@ -50,8 +50,8 @@ $(python):
 
 tests: .installed.cfg
 	@bin/test
-	# @bin/flake8 setup.py
-	# @bin/flake8 src/tribuna/buildout
+#   @bin/flake8 setup.py
+#   @bin/flake8 src/tribuna/buildout
 	@for pt in `find src/tribuna.* -name "*.pt"` ; do bin/zptlint $$pt; done
 	@for xml in `find src/tribuna.* -name "*.xml"` ; do bin/zptlint $$xml; done
 	@for zcml in `find src/tribuna.* -name "*.zcml"` ; do bin/zptlint $$zcml; done
